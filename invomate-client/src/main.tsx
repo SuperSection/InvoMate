@@ -13,9 +13,9 @@ import Menubar from './components/Menubar';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Menubar />
     <Toaster />
     <BrowserRouter>
+    <Menubar />
       <Routes>
         <Route path='/' element={<LandingPage />} />
         <Route path='/dashboard' element={<Dashboard />} />
